@@ -1,0 +1,432 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/****************
+ * Header Style
+ ***************/
+#header {
+    width: 100%;
+    background-color: #fff;
+}
+#header .top {
+    border-bottom: 1px solid #ddd;
+}
+#header .top:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+#header .top > div {
+    display: table;
+    height: 80px;
+}
+#header .top > div .table_cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+#header .top > .logo {
+    float: left;
+    margin-left: 25px;
+}
+#header .top > .logo .table_cell {}
+#header .top > .logo .table_cell a {
+    text-decoration: none;
+}
+#header .top > .logo .table_cell h1 {
+    margin: 0;
+    text-transform: uppercase;
+    color: #ed524b;
+    font-family: 'Lato Black', sans-serif;
+}
+#header .top > .social {
+    float: right;
+    margin-right: 25px;
+}
+#header .top > .social .table_cell {}
+#header .top > .social ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#header .top > .social ul li {
+    display: inline-block;
+}
+#header .top > .social ul li .center {
+    display: table;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    border: 1px solid #ed524b;
+    border-radius: 50%;
+}
+#header .top > .social ul li .center:hover,
+#header .top > .social ul li .center:hover i {
+    background-color: #ed524b;
+    color: #fff;
+}
+#header .top > .social ul li a {
+    vertical-align: middle;
+    display: table-cell;
+}
+#header .top > .social ul li a i {
+    color: #ed524b;
+}
+#header .top > .social ul li .center:hover i.fa-facebook {}
+#header .top > .social ul li a i.fa-twitter {}
+#header .top > .social ul li a i.fa-google-plus {}
+#header .top > .social ul li a i.fa-free-code-camp {}
+#header .top > .social ul li a i.fa-youtube-play {}
+#header .top > .social ul li a i.fa-instagram {}
+#header .top > .social ul li a i.fa-linkedin {}
+
+/**************
+ * Whole Wrap 
+ *************/
+#wrap {
+    height: 100%;
+    position: relative;
+}
+#wrap > .sidebar_nav {
+    float: left;
+    height: 100%;
+    width: 15%;
+    background-color: #363636;
+}
+#wrap > .sidebar_nav .nav_wrap {}
+#wrap > .sidebar_nav .nav_wrap .logo {
+    text-align: center;
+    padding: 15px 0;
+}
+#wrap > .sidebar_nav .nav_wrap .logo img {
+    width: 150px;
+}
+#wrap > .sidebar_nav .nav_wrap .nav {
+    padding-left: 15px;
+}
+#wrap > .sidebar_nav .nav_wrap .nav > li {
+    text-align: left;
+    margin: 0 0 5px 0;
+    height: 76px;
+    display: table;
+    width: 100%;
+}
+#wrap > .sidebar_nav .nav_wrap .nav > li.active:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    margin-top: -39px;
+    width: 0;
+    height: 0;
+    border-top: 39px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 39px solid transparent;
+    border-left: 20px solid #ed524b;
+}
+#wrap > .sidebar_nav .nav_wrap .nav > li.active a , 
+#wrap > .sidebar_nav .nav_wrap .nav > li:hover a {
+    background-color: #ed524b;
+    color: #fff;
+}
+#wrap > .sidebar_nav .nav_wrap .nav > li a {
+    border-radius: 0;
+    color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+}
+#wrap > .sidebar_nav .nav_wrap .nav > li a i {
+    font-size: 30px;
+    width: 45px;
+}
+#wrap > .sidebar_nav .nav_wrap .nav > li a span {
+    margin: 5px 0 0 0;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+#wrap > .content {
+    float: left;
+    height: 100%;
+    width: 85%;
+    background-color: #fff;
+}
+#wrap > .content .content_wrap {
+    margin-top: 80px;
+}
+#wrap > .content .content_wrap .tab-content {}
+#wrap > .content .content_wrap .tab-content > .tab-pane {}
+#wrap > .content .content_wrap .tab-content > .tab-pane > div {
+    padding-top: 55px;
+}
+#wrap > .content .content_wrap .tab-content > .tab-pane > div .title {
+    margin-bottom: 30px;
+}
+#wrap > .content .content_wrap .tab-content > .tab-pane > div .title h2 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-family: 'Lato Light', sans-serif;
+}
+#wrap > .content .content_wrap .tab-content > .tab-pane.active {}
+
+/* Content Style */
+#content {
+    margin-top: 45px;
+    padding: 0  45px;
+}
+#content .inner-wrap > .title h2 {
+    font-size: 45px;
+    margin: 0 0 15px 0;
+    font-family: 'Lato Light', sans-serif;
+    text-transform: uppercase;
+}
+
+/* Home */
+#home {}
+#home .inner-wrap {}
+#home .inner-wrap > img {
+    border: 3px solid #ed524b;
+    border-radius: 50%;
+    width: 200px;
+}
+#home .inner-wrap > .name {}
+#home .inner-wrap > .name h2 {
+    font-size: 65px;
+    margin: 10px 0 5px 0;
+    font-family: 'Lato Light', sans-serif;
+}
+#home .inner-wrap > .tag {}
+#home .inner-wrap > .tag p {
+    font-family: 'Lato Light', sans-serif;
+    margin: 0;
+    font-size: 20px;
+}
+#home div > .social {}
+#home div > .social .table_cell {
+    padding: 25px 0;
+}
+#home div > .social ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#home div > .social ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+#home div > .social ul li .center {
+    display: table;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    border: 1px solid #ed524b;
+    border-radius: 50%;
+    -webkit-transition: transform 1s, 1s;
+}
+#home div > .social ul li .center:hover {
+    background-color: #ed524b;
+}
+#home div > .social ul li .center:hover,
+#home div > .social ul li .center:hover i {
+    color: #fff;
+    transform: scale(1.2);
+    transition: all 300ms ease-in-out;
+}
+#home div > .social ul li a {
+    vertical-align: middle;
+    display: table-cell;
+}
+#home div > .social ul li a i {
+    color: #ed524b;
+    font-size: 25px;
+    -webkit-transition: transform 1s, 1s;
+}
+#home div > .social ul li .center:hover i.fa-facebook {}
+#home div > .social ul li a i.fa-twitter {}
+#home div > .social ul li a i.fa-google-plus {}
+#home div > .social ul li a i.fa-free-code-camp {}
+#home div > .social ul li a i.fa-youtube-play {}
+#home div > .social ul li a i.fa-instagram {}
+#home div > .social ul li a i.fa-linkedin {}
+
+/* About */
+#about {}
+#about .inner-wrap {}
+#about .inner-wrap > .title {}
+#about .inner-wrap > .title h2 {}
+#about .inner-wrap > .content {}
+#about .inner-wrap > .content p {
+    margin: 0 0 15px 0;
+    font-size: 20px;
+    font-family: 'Lato Light', sans-serif;
+}
+
+/* Portfolio */
+#portfolio {}
+#portfolio .inner-wrap {}
+#portfolio .inner-wrap > .title {}
+#portfolio .inner-wrap > .title h2 {}
+#portfolio .inner-wrap > .row {}
+#portfolio .inner-wrap > .row .inner-row {}
+#portfolio .inner-wrap > .row .inner-row .column {
+    padding: 15px;
+}
+#portfolio .inner-wrap > .row .inner-row .column .border {}
+#portfolio .inner-wrap > .row .inner-row .column .border a {
+    display: block;
+}
+#portfolio .inner-wrap > .row .inner-row .column .border a img {
+    width: 100%;
+}
+
+/* Contact form */
+#contact {}
+#contact .inner-wrap {}
+#contact .inner-wrap > .title {}
+#contact .inner-wrap > .title h2 {}
+#contact .inner-wrap > form {
+    border: 1px solid #ddd;
+    padding: 25px 0;
+}
+#contact .inner-wrap > form:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#contact .inner-wrap > form .col {
+    padding: 0 20px;
+    float: left;
+    box-sizing: border-box;
+}
+#contact .inner-wrap > form .x-50 {
+    width: 50%;
+}
+#contact .inner-wrap > form .x-100 {
+    width: 100%;
+}
+#contact .inner-wrap > form .col > input {
+    font-family: 'Lato',sans-serif;
+    box-sizing: border-box;
+}
+#contact .inner-wrap > form .col > input#name {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #555;
+    height: 30px;
+    padding-left: 5px;
+}
+#contact .inner-wrap > form .col > input#email {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #555;
+    height: 30px;
+    padding-left: 5px;
+}
+#contact .inner-wrap > form .col > textarea {
+    padding: 5px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #555;
+    margin-top: 25px;
+}
+#contact .inner-wrap > form .col > input[type="submit"] {
+    height: 30px;
+    border: none;
+    background-color: #ed524b;
+    color: #fff;
+    width: 100px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+
+/****************************************
+ * New Design and this is the whole body 
+ ***************************************/
+.body {
+    height: 100%;
+}
+.body .inner-wrap {
+    height: 100%;
+}
+.body .inner-wrap .main_row {
+    height: 100%;
+}
+.body .inner-wrap .main_row .inner-row {
+    height: 100%;
+}
+.body .inner-wrap .main_row .inner-row .column {
+    height: 100%;
+    padding: 0;
+}
+
+/****************************
+ * New Navigation Style Left 
+ ***************************/
+#nav {
+    height: 100%;
+    /* background-color: #777; */
+}
+#nav .nav_wrap {
+    border-right: 1px solid #ddd;
+    height: 100%;
+}
+#nav  .nav_wrap .logo {
+    text-align: center;
+    padding: 15px 0;
+}
+#nav .nav_wrap .logo img {
+    width: 150px;
+}
+#nav .nav_wrap .nav {
+    padding-left: 15px;
+}
+#nav .nav_wrap .nav > li {
+    text-align: left;
+    margin: 0 0 5px 0;
+    height: 76px;
+    display: table;
+    width: 100%;
+}
+#nav .nav_wrap .nav > li.active:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    margin-top: -39px;
+    width: 0;
+    height: 0;
+    border-top: 39px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 39px solid transparent;
+    border-left: 20px solid #ed524b;
+}
+#nav .nav_wrap .nav > li.active a , 
+#nav .nav_wrap .nav > li:hover a {
+    background-color: #ed524b;
+    color: #fff;
+}
+#nav .nav_wrap .nav > li a {
+    border-radius: 0;
+    color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+    color: #000;
+}
+#nav .nav_wrap .nav > li a i {
+    font-size: 30px;
+    width: 45px;
+}
+#nav .nav_wrap .nav > li a span {
+    margin: 5px 0 0 0;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+
+
+
