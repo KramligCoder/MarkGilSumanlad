@@ -429,4 +429,26 @@ html, body {
 
 
 
+@media only screen and (max-width: 600px) {
+  
+    #nav .nav_wrap .nav {
+        display: none;
+    }
+    .body .inner-wrap .main_row .inner-row,
+    .body .inner-wrap .main_row .inner-row .column,
+    #nav,
+    #nav .nav_wrap {
+        height: auto;
+    }
+    #header, #content {
+        text-align: center;
+    }
+    #home div > .social ul li .center {
+        height: 45px;
+        width: 45px;
+    }
+    .m_index {
+        display: none;
+    }
 
+}
