@@ -450,5 +450,20 @@ html, body {
     .m_index {
         display: none;
     }
+    #header .top > .logo {
+        float: none;
+        margin: 0;
+        display: block;
+        height: auto;
+        text-align: center;
+    }
+    #header .top > .logo .table_cell {
+        display: block;
+        margin: 0 20px;
+    }
+    #header .top > .social {
+        float: none;
+        width: 100%;
+    }
 
 }
